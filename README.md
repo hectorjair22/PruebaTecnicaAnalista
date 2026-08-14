@@ -1,8 +1,8 @@
-# 🌍 Explorador de Ciudades y Países
+#  Explorador de Ciudades y Países
 
 Aplicación web en PHP con patrón MVC para consultar información de países y sus ciudades. Desarrollado como prueba técnica.
 
-## 📋 Descripción
+##  Descripción
 
 Aplicación que permite:
 - Seleccionar un país de la base de datos
@@ -13,7 +13,7 @@ Funciona en **Desktop, Tablet y Móviles**.
 
 ---
 
-## 🏗️ Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 PruebaTecnica/
@@ -39,7 +39,7 @@ PruebaTecnica/
 
 ---
 
-## 🔧 Instalación
+##  Instalación
 
 ### Requisitos
 - PHP 8.x
@@ -111,7 +111,7 @@ Population     : int        - Población ciudad
 
 ---
 
-## 📖 Cómo Funciona
+##  Cómo Funciona
 
 ### Paso 1: Seleccionar País
 - Usuario accede a la aplicación
@@ -131,7 +131,7 @@ Population     : int        - Población ciudad
 
 ---
 
-## 🎨 Tecnologías Usadas
+##  Tecnologías Usadas
 
 - **PHP 8.x** - Backend
 - **MySQL** - Base de datos
@@ -141,7 +141,7 @@ Population     : int        - Población ciudad
 
 ---
 
-## 📊 Consultas SQL Incluidas
+##  Consultas SQL Incluidas
 
 Ver archivo `PREGUNTAS_SQL.sql` para:
 1. Ciudades con población ≤ 100,000
@@ -150,7 +150,7 @@ Ver archivo `PREGUNTAS_SQL.sql` para:
 
 ---
 
-## 🤔 Preguntas Teóricas
+##  Preguntas Teóricas
 
 **Pregunta 3.1:** ¿Clave primaria de country?  
 **Respuesta:** Code
@@ -162,7 +162,7 @@ Ver `RESPUESTAS_PREGUNTAS.md` para detalles.
 
 ---
 
-## 📡 APIs (Postman)
+##  APIs (Postman)
 
 Colección incluida en `postman/collection-climate-currency.json`
 
@@ -173,7 +173,7 @@ APIs utilizadas:
 
 ---
 
-## 🐛 Errores Comunes
+##  Errores Comunes
 
 | Error | Solución |
 |-------|----------|
@@ -183,7 +183,7 @@ APIs utilizadas:
 
 ---
 
-## 🚀 Git y Versionamiento
+##  Git y Versionamiento
 
 ```bash
 git init
@@ -194,7 +194,7 @@ git log --oneline
 
 ---
 
-## 👨‍💻 Desarrollado por
+##  Desarrollado por
 
 Analista de Soporte Nivel 1  
 Prueba Técnica - Infodec
