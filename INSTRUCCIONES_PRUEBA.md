@@ -1,4 +1,4 @@
-# 🚀 GUÍA PARA PROBAR LA APLICACIÓN
+# GUÍA PARA PROBAR LA APLICACIÓN
 
 ## PASO 1: Preparar la Base de Datos
 
@@ -76,39 +76,39 @@ Luego abre tu navegador en: **http://localhost:8000**
 
 ## PASO 4: Probar la Aplicación
 
-### 1️⃣ **Página Principal**
+### 1️ **Página Principal**
 - Se muestra un dropdown con todos los países
 - Selecciona un país y haz clic en "Ver Ciudades"
 
-### 2️⃣ **Ver Ciudades**
+### 2️ **Ver Ciudades**
 - Aparece una tabla con todas las ciudades del país
 - Muestra: Nombre, Población y una barra visual
 - La barra representa el porcentaje de población
 
-### 3️⃣ **Pruebas Recomendadas**
+### 3️ **Pruebas Recomendadas**
 
 **Prueba 1: Seleccionar Argentina**
 ```
-✓ Debe mostrar: Buenos Aires, Córdoba, Rosario, etc.
-✓ Buenos Aires debe tener la barra más grande (2,960,976 habitantes)
+ Debe mostrar: Buenos Aires, Córdoba, Rosario, etc.
+ Buenos Aires debe tener la barra más grande (2,960,976 habitantes)
 ```
 
 **Prueba 2: Seleccionar España**
 ```
-✓ Debe mostrar: Madrid, Barcelona, Valencia, etc.
-✓ Madrid es la más grande (2,938,723 habitantes)
+Debe mostrar: Madrid, Barcelona, Valencia, etc.
+Madrid es la más grande (2,938,723 habitantes)
 ```
 
 **Prueba 3: Seleccionar Brasil**
 ```
-✓ Ciudades como São Paulo, Rio de Janeiro, Salvador
-✓ São Paulo es la más poblada (9,968,485 habitantes)
+Ciudades como São Paulo, Rio de Janeiro, Salvador
+São Paulo es la más poblada (9,968,485 habitantes)
 ```
 
 **Prueba 4: Seleccionar México**
 ```
-✓ México City es la más grande (8,591,309 habitantes)
-✓ Aparecen todas sus ciudades principales
+México City es la más grande (8,591,309 habitantes)
+Aparecen todas sus ciudades principales
 ```
 
 ---
@@ -172,9 +172,9 @@ LIMIT 10;
 
 ---
 
-## 🔍 SOLUCIÓN DE PROBLEMAS
+##  SOLUCIÓN DE PROBLEMAS
 
-### ❌ Error: "Error DB: SQLSTATE[HY000]"
+###  Error: "Error DB: SQLSTATE[HY000]"
 **Solución:** Verifica que MySQL esté ejecutándose
 ```powershell
 # En Windows, abre Services y busca "MySQL"
@@ -183,14 +183,14 @@ mysql -u root -p
 # (si pide contraseña, introdúcela)
 ```
 
-### ❌ Error: "No countries found" 
+###  Error: "No countries found" 
 **Solución:** La base de datos no se importó correctamente
 ```powershell
 # Reintentar la importación
 mysql -u root world < world.sql
 ```
 
-### ❌ Página en blanco
+###  Página en blanco
 **Solución:** Habilita los errores en PHP
 ```php
 // Agrega al inicio de public/index.php
@@ -198,7 +198,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 ```
 
-### ❌ "Connection refused"
+###  "Connection refused"
 **Solución:** PHP no encuentra MySQL
 ```powershell
 # Verifica que el servidor PHP está en el puerto correcto
@@ -207,7 +207,7 @@ error_reporting(E_ALL);
 
 ---
 
-## ✅ CHECKLIST DE PRUEBA
+##  CHECKLIST DE PRUEBA
 
 - [ ] Base de datos `world` creada
 - [ ] Tabla `country` con 20 países
@@ -222,11 +222,11 @@ error_reporting(E_ALL);
 
 ---
 
-## 📝 NOTAS
+## NOTAS
 
 - La aplicación es **responsive** (funciona en móvil y tablet)
 - Los datos se obtienen directamente de MySQL
 - La barra de población es visual con CSS
 - No hay dependencias externas (solo PHP vanilla)
 
-¡Listo! Tu aplicación debería estar funcionando correctamente. 🎉
+¡Listo! Tu aplicación debería estar funcionando correctamente.
