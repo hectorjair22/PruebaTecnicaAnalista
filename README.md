@@ -83,7 +83,7 @@ http://localhost:8000
 
 ---
 
-## 💾 Base de Datos
+## Base de Datos
 
 ### Tablas
 
