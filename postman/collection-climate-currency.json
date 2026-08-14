@@ -1,0 +1,62 @@
+{
+  "info": {
+    "name": "APIs - Clima y Cambio de Moneda",
+    "description": "Colección de APIs para consumir servicios de clima y cambio de moneda. Prueba técnica Infodec.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "OpenWeatherMap - Clima Actual",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.openweathermap.org/data/2.5/weather?q=Bogota&appid=demo&units=metric",
+          "protocol": "https",
+          "host": ["api", "openweathermap", "org"],
+          "path": ["data", "2.5", "weather"],
+          "query": [
+            {"key": "q", "value": "Bogota"},
+            {"key": "appid", "value": "demo"},
+            {"key": "units", "value": "metric"}
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Exchange Rate API - USD a otras monedas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.exchangerate-api.com/v4/latest/USD",
+          "protocol": "https",
+          "host": ["api", "exchangerate-api", "com"],
+          "path": ["v4", "latest", "USD"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Open-Meteo - Clima sin API Key",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.open-meteo.com/v1/forecast?latitude=4.7110&longitude=-74.0721&current=temperature_2m,weather_code",
+          "protocol": "https",
+          "host": ["api", "open-meteo", "com"],
+          "path": ["v1", "forecast"],
+          "query": [
+            {"key": "latitude", "value": "4.7110"},
+            {"key": "longitude", "value": "-74.0721"},
+            {"key": "current", "value": "temperature_2m,weather_code"}
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
+
