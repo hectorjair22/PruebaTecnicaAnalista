@@ -1,4 +1,4 @@
-# 📚 Documentación Técnica del Código
+# Documentación Técnica del Código
 
 ## ¿Cómo está organizado todo?
 
@@ -10,7 +10,7 @@ Básicamente la aplicación está dividida en tres partes principales (MVC):
 
 ---
 
-## 🔍 Explicación de cada archivo
+## Explicación de cada archivo
 
 ### 1. **app/bootstrap.php**
 
@@ -321,7 +321,7 @@ return [
 
 ---
 
-## 🔄 Flujo de Datos
+##  Flujo de Datos
 
 ### Petición 1: Cargar página inicial
 
@@ -361,7 +361,7 @@ return [
 
 ---
 
-## 💡 Conceptos Usados
+##  Conceptos Usados
 
 ### 1. **Patrón Singleton**
 Solo una conexión a BD activa a la vez
@@ -393,7 +393,7 @@ compact('countries', 'error');
 
 ---
 
-## 🧪 Testing Manual
+##  Testing Manual
 
 ### Test 1: Listar países
 1. Abrir app
@@ -413,14 +413,14 @@ compact('countries', 'error');
 
 ---
 
-## 🔐 Seguridad Implementada
+##  Seguridad Implementada
 
-✅ **Prepared Statements** - Evita SQL Injection  
-✅ **htmlspecialchars()** - Evita XSS en vistas  
-✅ **Conexión PDO** - Acceso seguro a BD  
-✅ **Manejo de excepciones** - No expone detalles de BD  
+ **Prepared Statements** - Evita SQL Injection  
+ **htmlspecialchars()** - Evita XSS en vistas  
+ **Conexión PDO** - Acceso seguro a BD  
+ **Manejo de excepciones** - No expone detalles de BD  
 
-⚠️ **Pendiente para Producción:**
+**Pendiente para Producción:**
 - Validar entrada del usuario
 - Agregar CSRF token
 - Rate limiting
@@ -428,7 +428,7 @@ compact('countries', 'error');
 
 ---
 
-## 📝 Notas de Desarrollo
+##  Notas de Desarrollo
 
 - Código sin frameworks para aprendizaje
 - Fácil de mantener y extender
@@ -437,7 +437,7 @@ compact('countries', 'error');
 
 ---
 
-## 🚀 Cómo Extender
+##  Cómo Extender
 
 ### Agregar nueva funcionalidad
 
@@ -459,7 +459,7 @@ public static function search($term) {
 
 ---
 
-## 📞 Dudas Comunes
+##  Dudas Comunes
 
 **P: ¿Por qué usar static?**  
 R: Para no crear instancias innecesarias. Los modelos son utilidades.
